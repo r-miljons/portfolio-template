@@ -1,0 +1,76 @@
+/* ------------ Mobile Navigation -------------- */
+
+.mobile-nav {
+    display: none;
+    position: fixed;
+    background-color: rgb(231, 238, 244);
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 80%;
+    max-width: 200px;
+  }
+  
+  .mobile-links {
+    flex-direction: column;
+    margin-top: 30%;
+    gap: 2rem;
+  }
+  
+  .mobile {
+    display: none;
+    text-align: center;
+  }
+  
+  .close-css {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    top: 0.5rem;
+    right: 1rem;
+  }
+  
+  .left, .right {
+    position: absolute;
+    width: 1.5rem;
+    height: 2px;
+    border-radius: 30px;
+    background-color: rgb(82, 82, 82);
+  }
+  
+  .left {
+    transform: rotate(45deg);
+  }
+  .right {
+    transform: rotate(-45deg);
+  }
+  
+  .mobile-menu-enter {
+    transform: translateX(110%);
+  }
+  
+  .mobile-menu-enter-active {
+    transform: translateX(0%);
+    transition: all 300ms ease;
+  }
+  
+  .mobile-menu-exit-active {
+    transform: translateX(110%);
+    box-shadow: 0 0 100vh 10px rgba(0, 0, 0, 0);
+    transition: all 300ms ease;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .mobile {
+      display: block;
+    }
+    .mobile-nav {
+      display: block;
+    }
+    .mobile-links {
+      display: flex;
+    }
+  }

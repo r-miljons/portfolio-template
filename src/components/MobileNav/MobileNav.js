@@ -1,6 +1,7 @@
 import { React, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { CSSTransition } from 'react-transition-group'
+import "./MobileNav.css"
 
 export default function MobileNav({handleToggleMenu, toggleMenu}) {
     const nodeRef = useRef(null);

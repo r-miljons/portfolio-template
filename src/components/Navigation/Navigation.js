@@ -1,7 +1,8 @@
 import { React, useState, useRef } from 'react';
 import { Link, useNavigate } from "react-router-dom";
-import MobileNav from './MobileNav';
-import menu from "../assets/menu.svg"
+import MobileNav from '../MobileNav/MobileNav';
+import menu from "../../assets/menu.svg"
+import "./Navigation.css";
 
 export default function Navigation() {
   const navigate = useNavigate();

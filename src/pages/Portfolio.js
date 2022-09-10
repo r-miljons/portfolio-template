@@ -3,6 +3,7 @@ import portfolioImg from "../assets/portfolio.jpg"
 import arrowBack from "../assets/arrow-back.svg";
 import arrowForward from "../assets/arrow-forward.svg";
 
+
 export default function Portfolio() {
   return (
     <div className='portfolio-container'>

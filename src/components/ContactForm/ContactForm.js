@@ -1,5 +1,6 @@
 import React from 'react'
-import sendIcon from "../assets/send.svg"
+import sendIcon from "../../assets/send.svg"
+import "./ContactForm.css";
 
 export default function ContactForm() {
   return (
