@@ -34,100 +34,22 @@ a {
   font-family: 'Rubik', sans-serif;
 }
 
-
 /* ------------ Homepage -------------- */
 
 .homepage-container {
-  height: 100vh;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 1rem;
-  background-color: rgb(30, 28, 36);
+  min-height: 100vh;
   overflow: hidden;
-}
-
-.landing-text {
-  width: 70%;
-}
-
-.landing-text h1 {
-  margin: 0 0 2rem;
-  color: rgb(255, 255, 255);
-  font-size: 4rem;
-  text-align: center;
-}
-
-.main-button {
-  display: block;
-  margin: 0 auto;
-  background: rgba(255, 255, 255, 0.515);
-  border: none;
-  color:rgb(55, 55, 55);
-  font-size: 1.5rem;
-  padding: 1rem 1.5rem;
-  border-radius: 10px;
-  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.14);
-  backdrop-filter: blur(5px);
-  transition: all 0.2s;
-}
-
-.main-button:hover {
-  background: rgb(255, 255, 255);
-  cursor: pointer;
-  transform: translateY(-2px);
-}
-
-@media screen and (max-width: 768px) {
-  .landing-text h1 {
-    font-size: 2rem;
-  }
-  .main-button {
-    font-size: 1rem;
-  }
 }
 
 /* ------------ Portfolio Page -------------- */
 
 .portfolio-container {
-  height: 100vh;
-  background-color: rgb(35, 35, 35);
-}
-
-.showcase-container {
-  height: 100%;
-  width: 100%;
-  background-position: center;
-  background-size: cover;
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: rgb(228, 228, 229);
+  padding-bottom: 1rem;
+  scroll-margin-top: 30px;
   position: relative;
-}
-
-.dark-overlay {
-  height: 100%;
-  width: 100%;
-  padding-bottom: 5%;
-  display: flex;
-  background: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(0,0,0,0.7150210425967262) 100%);
-}
-
-.picture-info {
-  align-self: flex-end;
-  width: 80%;
-  margin-left: 10%;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.521);
-}
-
-.picture-info h1 {
-  color:rgb(255, 255, 255);
-  margin: 1rem 0;
-  font-size: 2.5rem;
-}
-
-.picture-info p {
-  color:rgb(227, 227, 227);
-  margin-bottom: 2rem;
 }
 
 .portfolio-nav {
@@ -142,48 +64,17 @@ a {
   padding: 0 2rem;
 }
 
-.previous, .next {
-  background-color: rgba(0, 0, 0, 0.642);
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.3);
-  backdrop-filter: blur(5px);
-  height: 4rem;
-  width: 4rem;
-  border-radius: 50%;
-  padding: 0.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s;
-}
-
-.previous img, .next img {
-  width: 2.5rem;
-  filter: invert(0.7);
-}
-
-.previous:hover, .next:hover {
-  background-color: rgba(0, 0, 0, 0.878);
-  cursor: pointer;
-}
-
 @media screen and (max-width: 768px) {
-  .previous, .next {
-    height: 2.5rem;
-    width: 2.5rem;
-  }
-  .previous img, .next img {
-    width: 1.5rem;
-  }
-  .portfolio-nav {
-    padding: 0 1rem;
+  .portfolio-container {
+    background: linear-gradient(90deg, rgb(211, 211, 211) 0%, rgb(228, 228, 229) 10%, rgb(228, 228, 229) 90%, rgb(211, 211, 211) 100%);
   }
 }
 
 /* ------------ Contacts Page -------------- */
 
 .contact-container {
-  min-height: 100%;
-  padding: 0 1rem;
+  min-height: max-content;
+  padding: 2rem 1rem;
   display: flex;
   align-items: center;
   background-color: rgb(30, 28, 36);
@@ -201,7 +92,7 @@ a {
   overflow: hidden;
 }
 
-.contact-text h1 {
+.contact-text h2 {
   color:rgb(255, 255, 255);
 }
 
@@ -236,10 +127,6 @@ a {
 @media screen and (max-width: 768px) {
   .contact-flex {
     flex-direction: column;
-    width: 100%;
-    max-width: 500px;
-  }
-  form {
     width: 100%;
     max-width: 500px;
   }

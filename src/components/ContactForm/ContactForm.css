@@ -75,3 +75,10 @@ form {
     background-color: rgb(242, 242, 242);
     transform: translateY(-1px);
   }
+
+  @media screen and (max-width: 768px) {
+    form {
+      width: 100%;
+      max-width: 500px;
+    }
+  }

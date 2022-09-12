@@ -1,5 +1,7 @@
 import React from 'react'
-import { Outlet } from 'react-router-dom';
+import Contact from '../../pages/Contact';
+import Homepage from '../../pages/Homepage';
+import Portfolio from '../../pages/Portfolio';
 import Navigation from '../Navigation/Navigation';
 import "./Layout.css";
 
@@ -7,7 +9,9 @@ export default function Layout() {
   return (
     <div className='layout'>
         <Navigation />
-        <Outlet />
+        <Homepage/>
+        <Portfolio/>
+        <Contact/>
     </div>
   )
 }

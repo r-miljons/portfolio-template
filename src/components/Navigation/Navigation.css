@@ -33,15 +33,18 @@ nav {
   }
   
   .nav-link a {
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
     text-decoration: none;
     color: rgb(55, 55, 55);
     font-size: 1.2rem;
-    transition: all 0.2s;
+    transition: all 0.2s;  
   }
   
   .nav-link a:hover {
     color:rgb(0, 0, 0);
     text-decoration: underline;
+    cursor: pointer;
   }
   
   .menu-icon {

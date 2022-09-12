@@ -9,17 +9,22 @@
     height: 100vh;
     width: 80%;
     max-width: 200px;
+    box-shadow: 0 0 100vh 10px rgba(0, 0, 0, 0.5);
   }
   
   .mobile-links {
     flex-direction: column;
-    margin-top: 30%;
+    margin-top: 20vh;
     gap: 2rem;
   }
   
   .mobile {
     display: none;
     text-align: center;
+  }
+
+  .mobile a {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.223);
   }
   
   .close-css {

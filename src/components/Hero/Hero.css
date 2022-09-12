@@ -1,0 +1,61 @@
+/* ------------ Homepage -------------- */
+
+.hero-container {
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+    background-color: rgb(30, 28, 36);
+    overflow: hidden;
+  }
+  
+  .landing-text {
+    width: 70%;
+  }
+  
+  .landing-text h1 {
+    margin: 0 0 2rem;
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    text-align: center;
+    font-weight: 200;
+  }
+  
+  .main-button {
+    font-family: 'Manrope', sans-serif;
+    text-transform: uppercase;
+    font-weight: 200;
+    display: block;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.778);
+    border: none;
+    color:rgb(55, 55, 55);
+    font-size: 1.5rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.14);
+    backdrop-filter: blur(5px);
+    transition: all 0.2s;
+  }
+  
+  .main-button:hover {
+    background: rgb(255, 255, 255);
+    cursor: pointer;
+    transform: translateY(-2px);
+  }
+  
+  @media screen and (max-width: 768px) {
+    .landing-text h1 {
+      font-size: 2rem;
+    }
+    .main-button {
+      font-size: 1rem;
+    }
+    .homepage-container {
+      background-attachment: scroll;
+    }
+  }

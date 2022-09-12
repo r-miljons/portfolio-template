@@ -1,6 +1,7 @@
 import { React, useRef } from 'react'
 import { Link } from 'react-router-dom'
 import { CSSTransition } from 'react-transition-group'
+import AnchorLink from 'react-anchor-link-smooth-scroll'
 import "./MobileNav.css"
 
 export default function MobileNav({handleToggleMenu, toggleMenu}) {
@@ -21,13 +22,13 @@ export default function MobileNav({handleToggleMenu, toggleMenu}) {
         </div>
         <div className='mobile-links'>
             <div className="nav-link mobile">
-                <Link to='/' onClick={handleToggleMenu}>Home</Link>
+                <AnchorLink href='#home' onClick={handleToggleMenu}>Home</AnchorLink>
             </div>
             <div className="nav-link mobile">
-                <Link to='/portfolio' onClick={handleToggleMenu}>Portfolio</Link>
+                <AnchorLink href='#portfolio' onClick={handleToggleMenu}>Portfolio</AnchorLink>
             </div>
             <div className="nav-link mobile">
-                <Link to='/contact' onClick={handleToggleMenu}>Contact</Link>
+                <AnchorLink href='#contact' onClick={handleToggleMenu}>Contact</AnchorLink>
             </div>
         </div>
     </div>
