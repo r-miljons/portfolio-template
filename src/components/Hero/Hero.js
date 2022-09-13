@@ -26,7 +26,8 @@ export default function Hero() {
   const heroData = data.allPageHero[0];
 
   return (
-    <div className='hero-container' style={{backgroundImage: `url(${heroData.picture.asset.url})`}}>
+    <div className='hero-container'>
+      <div className='hero-image' style={{backgroundImage: `url(${heroData.picture.asset.url})`}}></div>
         <div className='landing-text'>
             <h1>{heroData.landingText}</h1>
             <AnchorLink href='#portfolio' style={{textDecoration: 'none'}}><button className='main-button'>See Portfolio</button></AnchorLink>
