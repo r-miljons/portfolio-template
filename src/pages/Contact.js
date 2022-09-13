@@ -22,7 +22,7 @@ export default function Contact() {
   if (error) return <p style={{textAlign: 'center'}}>Couldn't connect to server.</p>
 
   const contactData = data.allContact[0];
-
+  console.log(contactData.email);
   return (
     <div className='contact-container' id="contact">
         <div className="contact-flex">
@@ -32,7 +32,7 @@ export default function Contact() {
                 <PortableText value={contactData.descriptionRaw}/>
                 <div className="contact-info"><img className="email-icon" src={emailIcon} alt="email icon"/><p>{contactData.email}</p></div>
             </div>
-            <ContactForm />
+            <ContactForm email={contactData.email}/>
         </div>
     </div>
   )

@@ -3,6 +3,7 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { ApolloProvider } from '@apollo/client';
 import { apolloClient } from './client';
 import Layout from './components/Layout/Layout';
+import Thankyou from './pages/Thankyou';
 
 
 function App() {
@@ -10,7 +11,9 @@ function App() {
     <ApolloProvider client={apolloClient}>
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<Layout />}/>
+          <Route path='/' element={<Layout />}>
+            <Route path="/thankyou" element={<Thankyou />}/>
+          </Route>
         </Routes>
       </BrowserRouter>
     </ApolloProvider>

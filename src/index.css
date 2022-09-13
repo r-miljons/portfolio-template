@@ -140,3 +140,34 @@ a {
   }
 }
 
+/* ------------ Thankyou Page -------------- */
+
+.thankyou-container {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  padding: 0 1rem;
+}
+
+.thankyou-message {
+  background-color: rgb(67, 65, 73);
+  padding: 1rem 3rem 2rem;
+  border: 1px solid rgba(255, 255, 255, 0.085);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
+  font-family: 'Rubik', sans-serif;
+}
+
+.thankyou-message p {
+  margin: 1.5rem 0 2rem;
+}
+
+

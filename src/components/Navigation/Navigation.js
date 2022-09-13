@@ -35,10 +35,10 @@ export default function Navigation() {
                 <AnchorLink href='#home'>Home</AnchorLink>
             </div>
             <div className="nav-link">
-            <AnchorLink href='#portfolio'>Portfolio</AnchorLink>
+              <AnchorLink href='#portfolio'>Portfolio</AnchorLink>
             </div>
             <div className="nav-link">
-            <AnchorLink href='#contact'>Contact</AnchorLink>
+              <AnchorLink href='#contact'>Contact</AnchorLink>
             </div>
         </div>
         <img className="menu-icon" src={menu} onClick={handleToggleMenu}/>
